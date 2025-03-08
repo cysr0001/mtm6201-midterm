@@ -17,22 +17,22 @@
   <body>
     <div class="container">
       <header>
-        <p class="logo">Dwello</p>
         <nav>
+          <p class="logo">Dwello</p>
+
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Agents</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-        </nav>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-user"></i>
-        <button>
-          <a href="#">Sign Up</a>
-        </button>
 
-        <section>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+          <button class="signup-btn">
+            <a href="#">Sign Up</a>
+          </button>
+        </nav>
           <h1>Find Your Dream Home</h1>
           <p>
             Explore our curated selection of exquisite properties meticulously
@@ -40,7 +40,7 @@
           </p>
 
           <button>
-            <a href="#">Search Properties</a>
+            <a href="#">Sign Up</a>
           </button>
           <img src="images/hero.png" alt="House" />
           <form action="#">
@@ -50,20 +50,15 @@
               name="location"
               placeholder="Location"
             />
-            <input type="text" id="type" name="type" placeholder="Type" />
-            <input
-              type="text"
-              id="price-range"
-              name="price-range"
-              placeholder="Price"
-            />
+            <input type="text" id="type" name="type" placeholder="Type"/>
+
+            <input type="text" id="price-range" name="price-range" placeholder="Price"/>
             <button type="submit">Sign Up</button>
           </form>
-        </section>
       </header>
       <!-- Main -->
       <main>
-        <section>
+        <section class="about">
           <img src="images/luxury_house.jpg" alt="Luxury House" />
           <h2>We Help You To Find Your Dream Home</h2>
           <p>
@@ -72,16 +67,16 @@
             becomes a reality
           </p>
           <div class="stats">
-            <p>8K</p>
-            <span>Houses Available</span>
+            <h3>8K</h3>
+            <p>Houses Available</p>
           </div>
           <div class="stats">
-            <p>6K+</p>
-            <span>Houses Sold</span>
+            <h3>6K+</h3>
+            <p>Houses Sold</p>
           </div>
           <div class="stats">
-            <p>2K+</p>
-            <span>Trusted Agents</span>
+            <h3>2K+</h3>
+            <p>Trusted Agents</p>
           </div>
         </section>
 
