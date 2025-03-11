@@ -49,57 +49,84 @@ table {
 
 /* Styling Starts Here */
 
-/* body */
+/* Global Variables */
+:root {
+    --primary-color: #DDC7BB;
+    --secondary-color: #FEF7F2;;
+    --font-color: #2B1B12;
+    --heading-one: 2.5em;
+    --heading-two: 2em;
+    --heading-three: 1.5em;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+} 
 body {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     line-height: 1.8;
+    color: #2B1B12;
+    background-color: #DDC7BB;
 }
-
-/* Header background styling */
-header {
-    padding: 3em 0 0 3em;
+header, .hero{
     background-color: #FEF7F2;
-    color: #2B1B12;
-    height: 1000px;
-}
-.logo {
-    font-size: 2em;
-    font-weight: bold;
-}
-header nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-header nav ul {
+} 
+header{
+    width: 100%;
+    background-color: var(--secondary-color);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em 0 1em 0;
 }
-header nav ul li {
-    list-style: none;
+header img {
+    width: 120px;
 }
-header nav ul li a {
+header i{
+    padding: 1em;
+    color: #2B1B12;
     text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #2B1B12;
     font-size: 1em;
     font-weight: bold;
-    color: #2B1B12;
-    padding: 0 2em;
+    margin: 0 1em;
 }
-header .signup-btn{
-    border: none;
-    background-color: #2B1B12;
-    padding: 0.8em 2em;
-    width: 140px;
-    border-radius: 5px;
-    font-size: 1em;
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
 }
-header .signup-btn a{
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
     text-decoration: none;
-    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
 }
-
+.hero img{
+    width: 100%;
+}
+.california_img img{
+    width: 100px;
+} 
 /* Footer */
-footer {
+/* footer {
     background-color: #DDC7BB;
     color: #2B1B12;
     display: grid;
@@ -120,4 +147,4 @@ footer {
     margin-bottom: 1em;
     font-size: 0.95em;
     font-weight: bold;
-}
+} */
