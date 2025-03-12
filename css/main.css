@@ -57,6 +57,7 @@ table {
     --heading-one: 2.5em;
     --heading-two: 2em;
     --heading-three: 1.5em;
+    --paragraph-size: 1em;
 }
 .container{
     max-width: 1200px;
@@ -113,16 +114,18 @@ header button a{
     text-decoration: none;
     color: white;
 }
+.hero-column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .hero h1{
     font-size: 3em;
     font-weight: bolder;
 }
-p
-.hero 
-/* .social{
-    display: flex;
-    justify-content: space-between;
-} */
+.hero p{
+    font-size: var(--paragraph-size);
+    font-weight: 700;
+}
 .hero img{
     width: 100%;
 }
