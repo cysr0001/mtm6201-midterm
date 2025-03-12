@@ -80,7 +80,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 1em 0 1em 0;
+    margin-top: 1em;
 }
 header img {
     width: 120px;
@@ -102,23 +102,27 @@ nav ul li a{
     font-weight: bold;
     margin: 0 1em;
 }
-.social{
+header button{
+    background-color: var(--font-color);
+    border: none;
+    font-weight: 500;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+}
+header button a{
+    text-decoration: none;
+    color: white;
+}
+.hero h1{
+    font-size: 3em;
+    font-weight: bolder;
+}
+p
+.hero 
+/* .social{
     display: flex;
     justify-content: space-between;
-    width: 150px;
-    height: 40px;
-}
-.social a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    text-decoration: none;
-    border-radius: 50%;
-    margin-right: 10px;
-}
+} */
 .hero img{
     width: 100%;
 }
