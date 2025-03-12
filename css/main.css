@@ -52,7 +52,8 @@ table {
 /* Global Variables */
 :root {
     --primary-color: #DDC7BB;
-    --secondary-color: #FEF7F2;;
+    --secondary-color: #FEF7F2;
+    --accent-color: #DDC7BB;
     --font-color: #2B1B12;
     --heading-one: 2.5em;
     --heading-two: 2em;
@@ -81,7 +82,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 1em;
+    padding-top: 3em;
 }
 header img {
     width: 120px;
@@ -90,6 +91,7 @@ header i{
     padding: 1em;
     color: #2B1B12;
     text-decoration: none;
+    
 }
 nav ul li{
     list-style: none;
@@ -103,20 +105,22 @@ nav ul li a{
     font-weight: bold;
     margin: 0 1em;
 }
-header button{
+header button, .hero button{
     background-color: var(--font-color);
     border: none;
     font-weight: 500;
-    padding: 1em 1.5em;
+    padding: 1em 2.5em;
     border-radius: 5px;
 }
-header button a{
+header button a, .hero button a{
     text-decoration: none;
     color: white;
+    font-size: var(--paragraph-size);
 }
 .hero-column{
+    padding-top: 3em;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 400px 1fr;
 }
 .hero h1{
     font-size: 3em;
@@ -125,9 +129,29 @@ header button a{
 .hero p{
     font-size: var(--paragraph-size);
     font-weight: 700;
+    margin: 1.5em 0;
+}
+.hero button{
+    margin: 1.5em 0 10em 0;
 }
 .hero img{
-    width: 100%;
+    width: 800px;
+    /* position: absolute; */
+    top: -10px;
+    left: 780px;
+}
+.sign-up-form{
+    width: 70%;
+    background-color: var(--accent-color);
+    padding: 2em 1em;
+    align-items: center;
+}
+.sign-up-form input{
+    /* font-weight: bold; */
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1em;
 }
 .california_img img{
     width: 100px;
@@ -154,4 +178,3 @@ header button a{
     margin-bottom: 1em;
     font-size: 0.95em;
     font-weight: bold;
-} */
