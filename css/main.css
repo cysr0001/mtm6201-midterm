@@ -311,21 +311,63 @@ header button a,
   margin-inline: max(16px, 50dvi - 500px);
 }
 .why-choose-us-text{
-  text-align: center;
   font-weight: bold;
   margin-bottom: 4em;
-  /* make my text occupy 50% width and be aligned in the center of the viewport */
-  width: 50%;
-  margin-inline: max(16px, 50dvi - 500px);
+  text-align: center;
+  /* width: 50%; */
 }
-.cards {
+.col-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
 }
-/* .california_img img {
-  width: 100px;
-} */
+
+.cards {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding: 1em;
+}
+.cards img {
+  width: 80px;
+  margin-bottom: 1em;
+  background-color: #FBF5F1;
+  border-radius: 10px;
+  padding: 1em;
+}
+.cards h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.cards p {
+  font-weight:500;
+}
+/* End of Why Choose Us */
+
+/* Our popular residences */
+.popular-residences {
+  padding-top: 5em;
+  padding-inline: var(--paragraph-inline);
+}
+.popular-residences h2 {
+  text-align: center;
+  font-size: var(--heading-two);
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.popular-residences p {
+  
+}
+.california {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
 /* Footer */
 .footer-container {
     background-color: #DDC7BB;
