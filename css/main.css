@@ -342,6 +342,7 @@ header button a,
 }
 /* End of Why Choose Us */
 
+
 /* Our popular residences */
 .popular-residences {
   padding-top: 5em;
@@ -409,9 +410,51 @@ header button a,
 .pop-res-grid p {
   font-weight: bold;
 }
+/* End of Our popular residences */
+
+
+/* Testimonials Section */
 .testimonials-container{
   background-color: #FBF5F1;
 }
+.testimonials-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 5em 0;
+}
+.testimonials-card{
+  background-color: #DDC7BB;
+  border-radius: 10px;
+}
+.testimonials-card h3{
+  font-size: var(--heading-three);
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.testimony-location{
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.testimonials-card span{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.testimonials-img{
+  margin-bottom: 1em;
+}
+.testimonials-img img{
+  /* width: 100px; */
+  border-radius: 10px;
+}
+.testimonials-prof img{
+  width: 40px;
+  border-radius: 10px;
+}
+/* End of Testimonials */
+
+
 /* Footer */
 .footer-container {
     background-color: #DDC7BB;
