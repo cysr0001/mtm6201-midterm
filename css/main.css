@@ -409,15 +409,8 @@ header button a,
 .pop-res-grid p {
   font-weight: bold;
 }
-
 .testimonials-container{
-  background-color: var(--accent-color);
-  padding-top: 5em;
-}
-.testimonials{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  background-color: #FBF5F1;
 }
 /* Footer */
 .footer-container {
