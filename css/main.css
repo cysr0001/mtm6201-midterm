@@ -357,6 +357,7 @@ header button a,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
+  margin-bottom: 7em;
 }
 .california{
   background-color: var(--accent-color);
@@ -394,13 +395,12 @@ header button a,
 .pop-res-grid button{
   background-color: var(--font-color);
   border: none;
-  padding: 1em;
+  padding: 1em 1.5em;
   border-radius: 10px;
 }
 .pop-res-grid button a{
   text-decoration: none;
   color: #FBF5F1;
-  /* font-weight: bold; */
 }
 .pop-res-img-bg{
   background-color: #FBF5F1;
@@ -408,6 +408,16 @@ header button a,
 }
 .pop-res-grid p {
   font-weight: bold;
+}
+
+.testimonials-container{
+  background-color: var(--accent-color);
+  padding-top: 5em;
+}
+.testimonials{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
 }
 /* Footer */
 .footer-container {
