@@ -297,9 +297,35 @@ header button a,
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.california_img img {
-  width: 100px;
+/* Why Choose Us Section */
+.why-choose-us {
+  padding-top: 5em;
+  padding-inline: var(--paragraph-inline);
+  
 }
+.why-choose-us h2 {
+  text-align: center;
+  font-size: var(--heading-two);
+  font-weight: bolder;
+  margin-bottom: 1em;
+  margin-inline: max(16px, 50dvi - 500px);
+}
+.why-choose-us-text{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 4em;
+  /* make my text occupy 50% width and be aligned in the center of the viewport */
+  width: 50%;
+  margin-inline: max(16px, 50dvi - 500px);
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+/* .california_img img {
+  width: 100px;
+} */
 /* Footer */
 .footer-container {
     background-color: #DDC7BB;
