@@ -364,7 +364,50 @@ header button a,
 }
 .california_img img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.location-card {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+}
+.location-card h3 {
+  font-size: var(--heading-three);
+  font-weight: bold;
+}
+.location-card-1{
+  background-color: #FBF5F1;
   border-radius: 10px;
+  display: flex;
+  gap: 1em;
+}
+.location-card-1 img {
+  width: 40px;
+}
+.pop-res-grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 1em;
+}
+.pop-res-grid button{
+  background-color: var(--font-color);
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+}
+.pop-res-grid button a{
+  text-decoration: none;
+  color: #FBF5F1;
+  /* font-weight: bold; */
+}
+.pop-res-img-bg{
+  background-color: #FBF5F1;
+  border-radius: 10px;
+}
+.pop-res-grid p {
+  font-weight: bold;
 }
 /* Footer */
 .footer-container {
