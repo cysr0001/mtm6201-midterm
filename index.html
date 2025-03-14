@@ -1,251 +1,363 @@
 <!DOCTYPE html>
 <html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1.0'
+    />
+    <!-- Font -->
+    <link
+      rel='preconnect'
+      href='https://fonts.googleapis.com'
+    />
+    <link
+      rel='preconnect'
+      href='https://fonts.gstatic.com'
+      crossorigin
+    />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+    <!-- CSS -->
+    <link
+      rel='stylesheet'
+      href='css/main.css'
+    />
+    <title>Dwello</title>
+  </head>
 
-<head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <!-- Font -->
-  <link rel='preconnect' href='https://fonts.googleapis.com' />
-  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-  <link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
-    rel='stylesheet' />
-  <!-- CSS -->
-  <link rel='stylesheet' href='css/main.css' />
-  <title>Dwello</title>
-</head>
+  <body>
+    <!-- Skip Link -->
+    <a
+      href='#main-content'
+      class='skip-link'>Skip to main content</a>
 
-<body>
-  <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- Container -->
-  <div class='container'>
-    <!-- Header -->
-    <header role="banner">
-      <div class='logo'>
-        <img src='images/logo.png' alt='logo'>
-      </div>
-      <!-- Navigation -->
-      <nav role="navigation">
-        <ul role="list">
-          <li role="listitem"><a href='index.html'>Home</a></li>
-          <li role="listitem"><a href='service.html'>Service</a></li>
-          <li role="listitem"><a href='#'>Agents</a></li>
-          <li role="listitem"><a href='contact.html'>Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Social -->
-      <div class='social'>
-        <a href='#'><i class='fa-solid fa-magnifying-glass'></i></a>
-        <a href='#'><i class='fa-solid fa-user'></i></a>
-        <button class='signup-btn'>
-          <a href='#'>Sign Up</a>
-        </button>
-      </div>
-    </header>
-    <!-- Main -->
-    <main role="main">
-      <div class='hero'>
-        <div class='hero-column'>
-          <div class='hero-row'>
-            <h1 role="heading">Find Your Dream Home</h1>
-            <p role="paragraph">
-              Explore our curated selection of exquisite properties meticulously
-              tailored to your unique dream home vision
-            </p>
-            <button role="button">
-              <a href='#'>Sign Up</a>
-            </button>
-          </div>
-          <img src='images/hero.png' alt='House' class='hero-img hero-image' />
+    <!-- Container -->
+    <div class='container'>
+      <!-- Header -->
+      <header role='banner'>
+        <div class='logo'>
+          <img
+            src='images/logo.png'
+            alt='logo'>
         </div>
-      </div>
-      <!-- end of the hero section -->
-
-      <!-- Sign Up Form -->
-      <div class='sign-up-form'>
-        <form action='#' role="form">
-          <label>
-            <span>Location</span>
-            <input type='text' id='location' name='location' placeholder='Location' />
-            <img src='images/sign-up-form/location.svg' alt=''>
-          </label>
-          <label>
-            <span>Type</span>
-            <input type='text' id='type' name='type' placeholder='Type' />
-            <img src='images/sign-up-form/home.svg' alt=''>
-          </label>
-          <label>
-            <span>Price Smaller Than</span>
-            <input type='text' inputmode='numeric' id='price-range' name='price-range'
-              placeholder='Price Smaller Than' />
-            <img src='images/sign-up-form/price.svg' alt=''>
-          </label>
-          <button type='submit' class='signup-btn'>
-            Sign Up
+        <!-- Navigation -->
+        <nav role='navigation'>
+          <ul role='list'>
+            <li role='listitem'><a href='index.html'>Home</a></li>
+            <li role='listitem'><a href='service.html'>Service</a></li>
+            <li role='listitem'><a href='#'>Agents</a></li>
+            <li role='listitem'><a href='contact.html'>Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Social -->
+        <div class='social'>
+          <a href='#'><i class='fa-solid fa-magnifying-glass'></i></a>
+          <a href='#'><i class='fa-solid fa-user'></i></a>
+          <button class='signup-btn'>
+            <a href='#'>Sign Up</a>
           </button>
-        </form>
-      </div>
-      <!-- End of Sign Up Form -->
-
-      <!--We Help You To Find Your Dream Home  -->
-      <div class='help' id='main-content'>
-        <div class='luxury-img'>
-          <img src='images/luxury_house.jpg' alt='Luxury House' />
         </div>
-        <div class='luxury-text'>
-          <h2 role="heading">We Help You To Find Your Dream Home</h2>
-          <p>
-            From cozy cottages to luxurious estates, our dedicated team guides you
-            through every step of the journey, ensuring your dream home becomes a
-            reality
+      </header>
+      <!-- Main -->
+      <main role='main'>
+        <div class='hero'>
+          <div class='hero-column'>
+            <div class='hero-row'>
+              <h1 role='heading'>Find Your Dream Home</h1>
+              <p role='paragraph'>
+                Explore our curated selection of exquisite properties meticulously
+                tailored to your unique dream home vision
+              </p>
+              <button role='button'>
+                <a href='#'>Sign Up</a>
+              </button>
+            </div>
+            <div class='hero-img-wrapper'>
+              <img
+                src='images/hero.png'
+                alt='House'
+                class='hero-img hero-image'
+              />
+            </div>
+          </div>
+        </div>
+        <!-- end of the hero section -->
+
+        <!-- Sign Up Form -->
+        <div class='sign-up-form'>
+          <form
+            action='#'
+            role='form'>
+            <label>
+              <span>Location</span>
+              <input
+                type='text'
+                id='location'
+                name='location'
+                placeholder='Location'
+              />
+              <img
+                src='images/sign-up-form/location.svg'
+                alt=''>
+            </label>
+            <label>
+              <span>Type</span>
+              <input
+                type='text'
+                id='type'
+                name='type'
+                placeholder='Type'
+              />
+              <img
+                src='images/sign-up-form/home.svg'
+                alt=''>
+            </label>
+            <label>
+              <span>Price Smaller Than</span>
+              <input
+                type='text'
+                inputmode='numeric'
+                id='price-range'
+                name='price-range'
+                placeholder='Price Smaller Than'
+              />
+              <img
+                src='images/sign-up-form/price.svg'
+                alt=''>
+            </label>
+            <button
+              type='submit'
+              class='signup-btn'>
+              Sign Up
+            </button>
+          </form>
+        </div>
+        <!-- End of Sign Up Form -->
+
+        <!--We Help You To Find Your Dream Home  -->
+        <div
+          class='help'
+          id='main-content'>
+          <div class='luxury-img'>
+            <img
+              src='images/luxury_house.jpg'
+              alt='Luxury House'
+            />
+          </div>
+          <div class='luxury-text'>
+            <h2 role='heading'>We Help You To Find Your Dream Home</h2>
+            <p>
+              From cozy cottages to luxurious estates, our dedicated team guides you
+              through every step of the journey, ensuring your dream home becomes a
+              reality
+            </p>
+            <div class='stats-grid'>
+              <div class='stats'>
+                <h3 role='heading'>8K</h3>
+                <p role='paragraph'>Houses Available</p>
+              </div>
+              <div class='stats'>
+                <h3 role='heading'>6K+</h3>
+                <p role='paragraph'>Houses Sold</p>
+              </div>
+              <div class='stats'>
+                <h3 role='heading'>2K+</h3>
+                <p role='paragraph'>Trusted Agents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of We Help You To Find Your Dream Home -->
+
+        <!-- Why Choose Us -->
+        <div class='why-choose-us'>
+          <h2>Why Choose Us</h2>
+          <p class='why-choose-us-text'>
+            Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched
+            Personalized Service
           </p>
-          <div class='stats-grid'>
-            <div class='stats'>
-              <h3 role="heading">8K</h3>
-              <p role="paragraph">Houses Available</p>
+          <div class='col-cards'>
+            <div class='cards'>
+              <img
+                src='images/expert.png'
+                alt=''
+              />
+              <h3>Expert Guidance</h3>
+              <p>
+                Benefit from our team's seasoned expertise for a smooth buying experience
+              </p>
             </div>
-            <div class='stats'>
-              <h3 role="heading">6K+</h3>
-              <p role="paragraph">Houses Sold</p>
+
+            <div class='cards'>
+              <img
+                src='images/personalized.png'
+                alt=''
+              />
+              <h3>Personalized Service</h3>
+              <p>
+                Our services adapt to your unique needs, making your journey stress-free
+              </p>
             </div>
-            <div class='stats'>
-              <h3 role="heading">2K+</h3>
-              <p role="paragraph">Trusted Agents</p>
+
+            <div class='cards'>
+              <img
+                src='images/clipboard.png'
+                alt=''
+              />
+              <h3>Transparent Process</h3>
+              <p>
+                Stay informed with our clear and honest approach to buying your home
+              </p>
+            </div>
+
+            <div class='cards'>
+              <img
+                src='images/handshake.png'
+                alt=''
+              />
+              <h3>Exceptional Support</h3>
+              <p>
+                Providing peace of mind with our responsive and attentive customer service
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of We Help You To Find Your Dream Home -->
+        <!-- End of Why Choose Us -->
 
-      <!-- Why Choose Us -->
-      <div class='why-choose-us'>
-        <h2>Why Choose Us</h2>
-        <p class='why-choose-us-text'>
-          Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched
-          Personalized Service
-        </p>
-        <div class='col-cards'>
-          <div class='cards'>
-            <img src='images/expert.png' alt='' />
-            <h3>Expert Guidance</h3>
-            <p>
-              Benefit from our team's seasoned expertise for a smooth buying experience
-            </p>
-          </div>
+        <!-- Our Popular Residences -->
+        <div class='popular-residences'>
+          <h2>Our Popular Residences</h2>
 
-          <div class='cards'>
-            <img src='images/personalized.png' alt='' />
-            <h3>Personalized Service</h3>
-            <p>
-              Our services adapt to your unique needs, making your journey stress-free
-            </p>
-          </div>
-
-          <div class='cards'>
-            <img src='images/clipboard.png' alt='' />
-            <h3>Transparent Process</h3>
-            <p>
-              Stay informed with our clear and honest approach to buying your home
-            </p>
-          </div>
-
-          <div class='cards'>
-            <img src='images/handshake.png' alt='' />
-            <h3>Exceptional Support</h3>
-            <p>
-              Providing peace of mind with our responsive and attentive customer service
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End of Why Choose Us -->
-
-      <!-- Our Popular Residences -->
-      <div class='popular-residences'>
-        <h2>Our Popular Residences</h2>
-
-        <!-- Card 1 -->
-        <div class='california-container'>
-          <div class='california'>
-            <div class='california_img'>
-              <img src='images/san_francisco.png' alt='San Francisco' />
-            </div>
-            <!-- First Line (Heading) -->
-            <div class='location-card'>
-              <i class='fa-solid fa-location-dot'></i>
-              <h3>San Francisco, California</h3>
-            </div>
-            <!-- Second Line(Room and Sqft) -->
-            <div class='pop-res-grid'>
-              <div class='location-card-1'>
-                <img src='images/bed.png' class='bed' alt='' />
+          <!-- Card 1 -->
+          <div class='california-container'>
+            <div class='california'>
+              <div class='california_img'>
+                <img
+                  src='images/san_francisco.png'
+                  alt='San Francisco'
+                />
               </div>
-              <p>4 Rooms</p>
-              <div class='location-card-1'>
-                <img src='images/sewing.png' class='sewing' alt='' />
+              <!-- First Line (Heading) -->
+              <div class='location-card'>
+                <i class='fa-solid fa-location-dot'></i>
+                <h3>San Francisco, California</h3>
               </div>
-              <p>3,500 sq ft</p>
+              <!-- Second Line(Room and Sqft) -->
+              <div class='pop-res-grid'>
+                <div class='card-test-row'>
+                  <div class='location-card-1'>
+                    <img
+                      src='images/bed.png'
+                      class='bed'
+                      alt=''
+                    />
+                  </div>
+                  <p>4 Rooms</p>
+                </div>
+                <div class='card-test-row'>
+                  <div class='location-card-1'>
+                    <img
+                      src='images/sewing.png'
+                      class='sewing'
+                      alt=''
+                    />
+                  </div>
+                  <p>3,500 sq ft</p>
+                </div>
+              </div>
+              <div class='pop-res-grid'>
+                <button><a href='#'>Sign Up</a></button>
+                <p>$2,500, 000</p>
+              </div>
             </div>
-            <div class='pop-res-grid'>
-              <button><a href='#'>Sign Up</a></button>
-              <p>$2,500, 000</p>
-            </div>
-          </div>
-          <!-- End of Card 1 -->
+            <!-- End of Card 1 -->
 
-          <!-- Card 2 -->
-          <div class='california'>
-            <div class='california_img'>
-              <img src='images/beverly_hills.png' alt='beverly hills' />
-            </div>
-            <!-- First Line (Heading) -->
-            <div class='location-card'>
-              <i class='fa-solid fa-location-dot'></i>
-              <h3>Beverly Hills, California</h3>
-            </div>
-            <!-- Second Line(Room and Sqft) -->
-            <div class='pop-res-grid'>
-              <div class='location-card-1'>
-                <img src='images/bed.png' class='bed' alt='' />
+            <!-- Card 2 -->
+            <div class='california'>
+              <div class='california_img'>
+                <img
+                  src='images/beverly_hills.png'
+                  alt='beverly hills'
+                />
               </div>
-              <p>3 Rooms</p>
-              <div class='location-card-1'>
-                <img src='images/sewing.png' class='sewing' alt='' />
+              <!-- First Line (Heading) -->
+              <div class='location-card'>
+                <i class='fa-solid fa-location-dot'></i>
+                <h3>Beverly Hills, California</h3>
               </div>
-              <p>1,500 sq ft</p>
+              <!-- Second Line(Room and Sqft) -->
+              <div class='pop-res-grid'>
+                <div class='card-test-row'>
+                  <div class='location-card-1'>
+                    <img
+                      src='images/bed.png'
+                      class='bed'
+                      alt=''
+                    />
+                  </div>
+                  <p>3 Rooms</p>
+                </div>
+                <div class='card-test-row'>
+                  <div class='location-card-1'>
+                    <img
+                      src='images/sewing.png'
+                      class='sewing'
+                      alt=''
+                    />
+                  </div>
+                  <p>1,500 sq ft</p>
+                </div>
+              </div>
+              <div class='pop-res-grid'>
+                <button><a href='#'>Sign Up</a></button>
+                <p>$850, 000</p>
+              </div>
             </div>
-            <div class='pop-res-grid'>
-              <button><a href='#'>Sign Up</a></button>
-              <p>$850, 000</p>
-            </div>
-          </div>
-          <!-- End of Card 2 -->
+            <!-- End of Card 2 -->
 
-          <!-- Card 3 -->
-          <div class='california'>
-            <div class='california_img'>
-              <img src='images/palo_alto.png' alt='San Francisco' />
-            </div>
-            <!-- First Line (Heading) -->
-            <div class='location-card'>
-              <i class='fa-solid fa-location-dot'></i>
-              <h3>Palo Alto, California</h3>
-            </div>
-            <!-- Second Line(Room and Sqft) -->
-            <div class='pop-res-grid'>
-              <div class='location-card-1'>
-                <img src='images/bed.png' class='bed' alt='' />
+            <!-- Card 3 -->
+            <div class='california'>
+              <div class='california_img'>
+                <img
+                  src='images/palo_alto.png'
+                  alt='San Francisco'
+                />
               </div>
-              <p>6 Rooms</p>
-              <div class='location-card-1'>
-                <img src='images/sewing.png' class='sewing' alt='' />
+              <!-- First Line (Heading) -->
+              <div class='location-card'>
+                <i class='fa-solid fa-location-dot'></i>
+                <h3>Palo Alto, California</h3>
               </div>
-              <p>4,000 sq ft</p>
-            </div>
-            <div class='pop-res-grid'>
-              <button><a href='#'>Sign Up</a></button>
-              <p>$850, 000</p>
+              <!-- Second Line(Room and Sqft) -->
+              <div class='pop-res-grid'>
+                <div class='card-test-row'>
+                  <div class='location-card-1'>
+                    <img
+                      src='images/bed.png'
+                      class='bed'
+                      alt=''
+                    />
+                  </div>
+                  <p>6 Rooms</p>
+                </div>
+                <div class='card-test-row'>
+                  <div class='location-card-1'>
+                    <img
+                      src='images/sewing.png'
+                      class='sewing'
+                      alt=''
+                    />
+                  </div>
+                  <p>4,000 sq ft</p>
+                </div>
+              </div>
+              <div class='pop-res-grid'>
+                <button><a href='#'>Sign Up</a></button>
+                <p>$850, 000</p>
+              </div>
             </div>
           </div>
         </div>
@@ -257,70 +369,98 @@
           <!-- Testimonial 1 -->
           <div class='testimonials-grid'>
             <div class='testimonials-card'>
-              <div class="testimonials-img">
-                <img src='images/sarah_nguyen.jpg' alt='Sarah Nguyen' />
+              <div class='testimonials-img'>
+                <img
+                  src='images/sarah_nguyen.jpg'
+                  alt='Sarah Nguyen'
+                />
               </div>
-              <div class="user-testimony-grid">
-                <div class="testimonials-prof">
-                  <img src="images/sarah_nguyen_prof.jpg" alt="Sarah Nguyen Profile">
+              <div class='user-testimony-grid'>
+                <div class='testimonials-prof'>
+                  <img
+                    src='images/sarah_nguyen_prof.jpg'
+                    alt='Sarah Nguyen Profile'>
                 </div>
-                <div class="testimonials-paragraph">
-                  <p class="testimony-name">Sarah Nguyen</p>
+                <div class='testimonials-paragraph'>
+                  <p class='testimony-name'>Sarah Nguyen</p>
                   <p>San Francisco</p>
                 </div>
-                <span><img src="images/Star.svg" alt="">5.0</span>
+                <span><img
+                    src='images/Star.svg'
+                    alt=''>5.0</span>
               </div>
               <p>
-                Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the
-                perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.
+                Dwello truly cares about their clients. They listened to my needs and
+                preferences and helped me find the perfect home in the Bay Area. Their
+                professionalism and attention to detail are unmatched.
               </p>
             </div>
 
             <!-- Testimonial 2 -->
             <div class='testimonials-card'>
-              <div class="testimonials-img">
-                <img src='images/michael_rodriguez.jpg' alt='Michael Rodriguez' />
+              <div class='testimonials-img'>
+                <img
+                  src='images/michael_rodriguez.jpg'
+                  alt='Michael Rodriguez'
+                />
               </div>
-              <div class="user-testimony-grid">
-                <div class="testimonials-prof">
-                  <img src="images/michael_rodriguez_prof.jpg" alt="Michael Rodriguez Profile">
+              <div class='user-testimony-grid'>
+                <div class='testimonials-prof'>
+                  <img
+                    src='images/michael_rodriguez_prof.jpg'
+                    alt='Michael Rodriguez Profile'>
                 </div>
-                <div class="testimonials-paragraph">
-                  <p class="testimony-name">Michael Rodriguez</p>
+                <div class='testimonials-paragraph'>
+                  <p class='testimony-name'>Michael Rodriguez</p>
                   <p>San Diego</p>
                 </div>
-                <span><img src="images/Star.svg" alt="">4.5</span>
+                <span><img
+                    src='images/Star.svg'
+                    alt=''>4.5</span>
               </div>
               <p>
-                I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my
-                expectations. I found my dream home quickly and smoothly. Highly recommended!
+                I had a fantastic experience working with Dwello. Their expertise and
+                personalized service exceeded my expectations. I found my dream home
+                quickly and smoothly. Highly recommended!
               </p>
             </div>
 
             <!-- Testimonial 3 -->
             <div class='testimonials-card'>
-              <div class="testimonials-img">
-                <img src='images/emily_johnson.jpg' alt='Emily Johnson' />
+              <div class='testimonials-img'>
+                <img
+                  src='images/emily_johnson.jpg'
+                  alt='Emily Johnson'
+                />
               </div>
-              <div class="user-testimony-grid">
-                <div class="testimonials-prof">
-                  <img src="images/emily_johnson_prof.jpg" alt="Emily Johnson Profile">
+              <div class='user-testimony-grid'>
+                <div class='testimonials-prof'>
+                  <img
+                    src='images/emily_johnson_prof.jpg'
+                    alt='Emily Johnson Profile'>
                 </div>
-                <div class="testimonials-paragraph">
-                  <p class="testimony-name">Emily Johnson</p>
+                <div class='testimonials-paragraph'>
+                  <p class='testimony-name'>Emily Johnson</p>
                   <p>Los Angeles</p>
                 </div>
-                <span><img src="images/Star.svg" alt="">5.0</span>
+                <span><img
+                    src='images/Star.svg'
+                    alt=''>5.0</span>
               </div>
               <p>
-                Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me
-                through every step of the process. I couldn't be happier with my new home!
+                Dwello made my dream of owning a home a reality! Their team provided
+                exceptional support and guided me through every step of the process. I
+                couldn't be happier with my new home!
               </p>
             </div>
           </div>
-          <div class="testimonial-arrows">
-            <img src="images/left-arrow.svg" alt="">
-            <img src="images/right-arrow.svg" alt="">
+          <div class='testimonial-arrows'>
+            <img
+              src='images/left-arrow.svg'
+              alt=''>
+            <img
+              src='images/right-arrow.svg'
+              alt=''>
           </div>
         </div>
         <!-- End of Testimonials -->
@@ -331,77 +471,92 @@
             Do You Have Any Questions? <br />
             Get Help From Us
           </h2>
-          <div class="newsletter-text-wrapper">
+          <div class='newsletter-text-wrapper'>
             <div class='newsletter_text'>
-              <img src='images/verified.png' alt='' />
+              <img
+                src='images/verified.png'
+                alt=''
+              />
               <p>Chat live with our support team</p>
             </div>
             <div class='newsletter_text'>
-              <img src='images/verified.png' alt='' />
+              <img
+                src='images/verified.png'
+                alt=''
+              />
               <p>Browse our FAQ</p>
             </div>
           </div>
-          <div class="newsletter-form">
-            <label for="email">
+          <div class='newsletter-form'>
+            <label for='email'>
               <span>Email</span>
-              <img src="images/sign-up-form/email.svg" alt="">
-              <input type='email' placeholder='Enter your email address...' /></label>
+              <img
+                src='images/sign-up-form/email.svg'
+                alt=''>
+              <input
+                type='email'
+                placeholder='Enter your email address...'
+              /></label>
             <button>
               <a href='#'>Submit</a>
             </button>
           </div>
         </div>
-    </main>
+      </main>
 
-    <!-- Footer -->
-    <footer role="contentinfo">
-      <div class='footer-container'>
-        <div class='footer logo-paragraph'>
-          <div class='logo'>
-            <img src='images/logo.png' alt='' />
+      <!-- Footer -->
+      <footer role='contentinfo'>
+        <div class='footer-container'>
+          <div class='footer logo-paragraph'>
+            <div class='logo'>
+              <img
+                src='images/logo.png'
+                alt=''
+              />
+            </div>
+            <p>Bringing you closer to your dream home, one click at a time.</p>
           </div>
-          <p>Bringing you closer to your dream home, one click at a time.</p>
+          <!-- Footer Col 1 -->
+          <div class='footer'>
+            <h3>About</h3>
+            <a href='#'>Our Story</a>
+            <a href='#'>Careers</a>
+            <a href='#'>Our Team</a>
+            <a href='#'>Resources</a>
+          </div>
+          <!-- Footer Col 2 -->
+          <div class='footer'>
+            <h3>Support</h3>
+            <a href='#'>FAQ</a>
+            <a href='#'>Contact Us</a>
+            <a href='#'>Help Center</a>
+            <a href='#'>Terms of Service</a>
+          </div>
+          <!-- Footer Col 3 -->
+          <div class='footer'>
+            <h3>Find Us</h3>
+            <a href='#'>Events</a>
+            <a href='#'>Locations</a>
+            <a href='#'>Newsletter</a>
+          </div>
+          <!-- Footer Col 4 -->
+          <div class='footer'>
+            <h3>Our Social</h3>
+            <span>
+              <a href='#'><i class='fa-brands fa-instagram'></i> Instagram</a>
+            </span>
+            <span>
+              <a href='#'><i class='fa-brands fa-facebook'></i> Facebook</a>
+            </span>
+            <span>
+              <a href='#'><i class='fa-brands fa-square-x-twitter'></i> Twitter</a>
+            </span>
+          </div>
         </div>
-        <!-- Footer Col 1 -->
-        <div class='footer'>
-          <h3>About</h3>
-          <a href='#'>Our Story</a>
-          <a href='#'>Careers</a>
-          <a href='#'>Our Team</a>
-          <a href='#'>Resources</a>
-        </div>
-        <!-- Footer Col 2 -->
-        <div class='footer'>
-          <h3>Support</h3>
-          <a href='#'>FAQ</a>
-          <a href='#'>Contact Us</a>
-          <a href='#'>Help Center</a>
-          <a href='#'>Terms of Service</a>
-        </div>
-        <!-- Footer Col 3 -->
-        <div class='footer'>
-          <h3>Find Us</h3>
-          <a href='#'>Events</a>
-          <a href='#'>Locations</a>
-          <a href='#'>Newsletter</a>
-        </div>
-        <!-- Footer Col 4 -->
-        <div class='footer'>
-          <h3>Our Social</h3>
-          <span>
-            <a href='#'><i class='fa-brands fa-instagram'></i> Instagram</a>
-          </span>
-          <span>
-            <a href='#'><i class='fa-brands fa-facebook'></i> Facebook</a>
-          </span>
-          <span>
-            <a href='#'><i class='fa-brands fa-square-x-twitter'></i> Twitter</a>
-          </span>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src='https://kit.fontawesome.com/5eb7a9558c.js' crossorigin='anonymous'></script>
-</body>
-
+      </footer>
+    </div>
+    <script
+      src='https://kit.fontawesome.com/5eb7a9558c.js'
+      crossorigin='anonymous'></script>
+  </body>
 </html>

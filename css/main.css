@@ -158,6 +158,7 @@ header,
   width: 100%;
   background-color: var(--secondary-color);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 3em;
@@ -210,8 +211,10 @@ header button a,
 }
 .hero-column {
   padding-top: 3em;
-  display: grid;
-  grid-template-columns: 400px 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .hero {
   overflow-inline: clip;
@@ -231,19 +234,22 @@ header button a,
 }
 .hero .hero-img {
   width: 800px;
-  transform: translateY(-100px);
+  /* transform: translateY(-500px); */
   animation: calmScale 5s infinite alternate ease-in-out;
 }
 @keyframes calmScale {
   0% {
-      transform: scale(1);
+      transform: scale(1) translateY(-200px);
   }
   50% {
-      transform: scale(1.08);
+      transform: scale(1.08) translateY(-200px);
   }
   100% {
-      transform: scale(1);
+      transform: scale(1) translateY(-200px);
   }
+}
+.hero-img-wrapper{
+  width: 50dvi;
 }
 /* End of Hero Styling */
 
@@ -263,7 +269,16 @@ header button a,
   margin-inline: max(16px, 50dvi - 500px);
   gap: 16px;
 }
-
+.sign-up-form label {
+  background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 1em;
+    gap: 0.5em;
+    align-items: stretch;
+    display: flex;
+    min-block-size: 4em;
+}
 .sign-up-form label span {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -275,24 +290,28 @@ header button a,
 }
 
 .sign-up-form label img {
-  margin-inline-start: -3em;
-  transform: translateY(4px);
+  /* margin-inline-start: -3em;
+  transform: translateY(4px); */
 }
 
 .sign-up-form input {
-  font-weight: bold;
+  /* font-weight: bold;
   padding: 1em 2em;
   border-radius: 5px;
   border: none;
-  margin-right: 1em;
+  margin-right: 1em; */
+  background-color: transparent;
+    border: none;
 }
 /* End of Sign Up Form */
 
 /* Help Section Styling */
 .help {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   padding-inline: var(--paragraph-inline);
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .help img {
   width: 500px;
@@ -318,6 +337,14 @@ header button a,
 .stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.luxury-text {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  flex-grow: 1;
 }
 /* End of Help Section */
 
@@ -420,6 +447,12 @@ header button a,
 .location-card-1 img {
   width: 40px;
 }
+.card-test-row {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+}
 .pop-res-grid {
   display: flex;
   justify-content: space-between;
@@ -455,6 +488,7 @@ header button a,
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
   padding: 5em 0;
+  margin-inline: var(--paragraph-inline);
 }
 .testimonials-card{
   background-color: #DDC7BB;
@@ -473,6 +507,11 @@ header button a,
   justify-content: space-evenly;
   align-items: center;
   gap: 1em;
+}
+h2{
+  font-size: var(--heading-two);
+  font-weight: bold;
+  text-align: center;
 }
 .user-testimony-grid span{
   background-color: #FBF5F1;
@@ -526,16 +565,20 @@ header button a,
   width: 1px;
   overflow: hidden;
 }
-.newsletter label img{
-  margin-inline-start: 3em;
-  transform: translate(2.5em, 8px);
+.newsletter label {
+  background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    padding-inline: 1em;
+    margin-bottom: 1em;
+    gap: 0.5em;
+    align-items: stretch;
+    display: flex;
+    min-block-size: 4em;
 }
 .newsletter input{
-  background-color: var(--primary-color);
+  background-color: transparent;
   border: none;
-  border-radius: 10px;
-  padding: 1em 3em;
-  width: 30vw;
 }
 .newsletter input::placeholder{
   color: var(--font-color);
@@ -680,6 +723,7 @@ header button a,
 .service-cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2em;
   padding: 2em;
 }
@@ -690,6 +734,9 @@ header button a,
   padding: 2em;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: min-content;
 }
 
 .service-card:hover {
@@ -782,21 +829,6 @@ header button a,
       margin-bottom: 20px;
   }
 
-  .sign-up-form {
-      padding: 20px;
-  }
-
-  .sign-up-form label {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px;
-  }
-
-  .sign-up-form input {
-      width: 100%;
-      margin-top: 5px;
-  }
-
   .help {
       flex-direction: column;
       text-align: center;
@@ -865,17 +897,6 @@ header button a,
       align-items: center;
   }
 
-  .newsletter-form label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .newsletter-form input {
-      width: 100%;
-      margin-top: 5px;
-  }
-
   .footer-container {
       display: flex;
       flex-direction: column;
@@ -890,22 +911,9 @@ header button a,
 
 /* Media query for screens smaller than 480px (phones) */
 @media (max-width: 480px) {
-  .hero h1 {
-      font-size: 1.5em;
-  }
-
-  .hero p {
-      font-size: 1em;
-  }
-
-  .sign-up-form label span {
+  .sign-up-form label span, .sign-up-form input {
       font-size: 0.9em;
   }
-
-  .sign-up-form input {
-      font-size: 0.9em;
-  }
-
   .help h2 {
       font-size: 1.5em;
   }
