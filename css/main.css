@@ -142,7 +142,6 @@ table {
   --paragraph-size: 1em;
   --paragraph-inline: max(16px, 50dvi - 600px);
 }
-
 *,
 *::before,
 *::after {
@@ -738,4 +737,193 @@ header button a,
 
 .skip-link:focus {
   top: 0;
+}
+/* End of Skip link */
+
+/* Media Queries */
+/* Media query for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 10px;
+  }
+
+  header .logo img {
+      width: 150px;
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero img {
+      width: 100%;
+      height: auto;
+  }
+
+  .hero-column {
+      flex-direction: column;
+  }
+
+  .hero-row {
+      margin-bottom: 20px;
+  }
+
+  .sign-up-form {
+      padding: 20px;
+  }
+
+  .sign-up-form label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+
+  .sign-up-form input {
+      width: 100%;
+      margin-top: 5px;
+  }
+
+  .help {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .luxury-img img {
+      width: 100%;
+      height: auto;
+  }
+
+  .luxury-text {
+      margin-top: 20px;
+  }
+
+  .stats-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .stats {
+      margin-bottom: 10px;
+  }
+
+  .why-choose-us .col-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .why-choose-us .cards {
+      margin-bottom: 20px;
+  }
+
+  .popular-residences .california-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .popular-residences .california {
+      margin-bottom: 20px;
+  }
+
+  .testimonials-container {
+      text-align: center;
+  }
+
+  .testimonials-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .testimonials-card {
+      margin-bottom: 20px;
+  }
+
+  .newsletter {
+      text-align: center;
+  }
+
+  .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .newsletter-form label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .newsletter-form input {
+      width: 100%;
+      margin-top: 5px;
+  }
+
+  .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+}
+
+/* Media query for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 1.5em;
+  }
+
+  .hero p {
+      font-size: 1em;
+  }
+
+  .sign-up-form label span {
+      font-size: 0.9em;
+  }
+
+  .sign-up-form input {
+      font-size: 0.9em;
+  }
+
+  .help h2 {
+      font-size: 1.5em;
+  }
+  .why-choose-us p, .help p {
+      font-size: 1em;
+  }
+  .popular-residences h3, .stats h3 {
+      font-size: 1.2em;
+  }
+
+  .stats p, .popular-residences p, 
+  .testimonials-card p, .newsletter p, 
+  .sign-up-form input, .footer a {
+      font-size: 0.9em;
+  }
+
+  .why-choose-us h2, .testimonials-container h2, 
+  .newsletter h2, .popular-residences h2  {
+      font-size: 1.5em;
+  }
+  .footer h3 {
+      font-size: 1.2em;
+  }
 }
