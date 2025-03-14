@@ -187,12 +187,12 @@ nav ul li a {
   font-weight: bold;
   margin: 0 1em;
   padding: 0.8em 1.5em;
+  transition: all 0.3s ease-in-out;
 }
 nav ul li a:hover {
   color: var(--secondary-color);
   background-color: var(--font-color);
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
 }
 header button,
 .hero button, .signup-btn {
@@ -233,6 +233,18 @@ header button a,
 .hero .hero-img {
   width: 800px;
   transform: translateY(-100px);
+  animation: calmScale 5s infinite alternate ease-in-out;
+}
+@keyframes calmScale {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.08);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 /* End of Hero Styling */
 
@@ -338,7 +350,15 @@ header button a,
   background-color: var(--accent-color);
   border-radius: 10px;
   padding: 1em;
+  animation: backShadow 5s infinite alternate ease-in-out;
 }
+
+@keyframes backShadow{
+  50% {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  }
+}
+
 .cards img {
   width: 80px;
   margin-bottom: 1em;
@@ -515,7 +535,8 @@ header button a,
   background-color: var(--primary-color);
   border: none;
   border-radius: 10px;
-  padding: 1em 8em;
+  padding: 1em 3em;
+  width: 30vw;
 }
 .newsletter input::placeholder{
   color: var(--font-color);
@@ -566,3 +587,155 @@ header button a,
     font-size: 0.95em;
     font-weight: bold;
     }
+/* End of Footer */
+/* End of Home Page Styling */
+
+/* Contact Page Styling */
+:root {
+  --primary-color: #ddc7bb;
+  --secondary-color: #fef7f2;
+  --accent-color: #ddc7bb;
+  --font-color: #2b1b12;
+  --heading-one: 2.5em;
+  --heading-two: 2em;
+  --heading-three: 1.5em;
+  --paragraph-size: 1em;
+  --paragraph-inline: max(16px, 50dvi - 600px);
+}
+
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.contact-us h1{
+  font-size: var(--heading-one);
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+.contact-us p{
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.contact-us form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-us form textarea, .contact-us form input{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--accent-color);
+  margin-bottom: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  width: 60vw;
+}
+.contact-us form input{
+  padding: 2em;
+}
+.contact-us form textarea{
+  padding: 2em 4em 4em 2em;
+}
+.contact-us form input::placeholder, .contact-us form textarea::placeholder{
+  color: var(--font-color);
+  text-align: left;
+}
+.contact-us form label span{
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.contact-us form button{
+  background-color: var(--font-color);
+  border: none;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  color: #FBF5F1;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 20%;
+  transition: all 0.5s ease-in-out;
+}
+.contact-us form button:hover{
+  background-color: #fff;
+  color: var(--font-color);
+  outline: 1px solid var(--font-color);
+
+}
+/* End of Contact Page */
+
+/* About Page Styling */
+.service-intro {
+  text-align: center;
+  padding: 2em;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.service-card {
+  background-color: #fef7f2;
+  border-radius: 10px;
+  padding: 2em;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 80px;
+  margin-bottom: 1em;
+}
+/* End of About Page */
+
+/* Service Page Styling */
+.service-intro h1{
+  font-size: var(--heading-one);
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.service-intro p{
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.service-card h3{
+  font-size: var(--heading-two);
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.service-card p{
+  font-weight: bold;
+}
+/* End of Service Page */
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
