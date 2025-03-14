@@ -452,7 +452,71 @@ header button a,
 .user-testimony-grid, .testimonials-card p{
   padding: 0.5em 0.5em 1em 1em;
 }
+.testimonial-arrows{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding-bottom: 3em;
+}
 /* End of Testimonials */
+
+/* Newsletter */
+.newsletter{
+  padding: 6em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.newsletter h2{
+  margin-bottom: 1em;
+}
+.newsletter-text-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.newsletter-text-wrapper img{
+  width: 30px;
+}
+.newsletter_text{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.newsletter span{
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.newsletter label img{
+  margin-inline-start: 3em;
+  transform: translate(2.5em, 8px);
+}
+.newsletter input{
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  padding: 1em 8em;
+}
+.newsletter input::placeholder{
+  color: var(--font-color);
+}
+.newsletter button{
+  background-color: var(--font-color);
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1.8em;
+} 
+.newsletter button a{
+  text-decoration: none;
+  color: #FBF5F1;
+}
+/* End of Newsletter */
 
 
 /* Footer */
