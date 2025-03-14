@@ -349,12 +349,12 @@ header button a,
   background-color: var(--accent-color);
   border-radius: 10px;
   padding: 1em;
-  animation: backShadow 5s infinite alternate ease-in-out;
+  animation: backShadow 5s infinite ease-in-out;
 }
 
 @keyframes backShadow{
   50% {
-    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
   }
 }
 
@@ -660,7 +660,7 @@ header button a,
   color: #FBF5F1;
   font-weight: bold;
   font-size: 1.1em;
-  width: 20%;
+  /* width: 20%; */
   transition: all 0.5s ease-in-out;
 }
 .contact-us form button:hover{
@@ -743,10 +743,13 @@ header button a,
 /* Media Queries */
 /* Media query for screens smaller than 768px (tablets and phones) */
 @media (max-width: 768px) {
-  .container {
+  /* .container {
       padding: 0 10px;
-  }
-
+  } */
+   header{
+       display: flex;
+       flex-direction: column;   
+      }
   header .logo img {
       width: 150px;
   }
